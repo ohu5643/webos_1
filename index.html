@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WebOS</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="auth">
+  <h1>WebOS</h1>
+  <input id="email" type="email" placeholder="이메일">
+  <input id="password" type="password" placeholder="비밀번호">
+  <button id="signupBtn">회원가입</button>
+  <button id="loginBtn">로그인</button>
+</div>
+
+<div id="desktop" class="hidden">
+  <div class="topbar">
+    <span>WebOS</span>
+    <button id="logoutBtn">로그아웃</button>
+  </div>
+
+  <div class="icons">
+    <button id="explorerBtn">파일 탐색기</button>
+    <button id="notepadBtn">메모장</button>
+  </div>
+
+  <div id="explorer" class="window hidden">
+    <h3>파일 탐색기</h3>
+    <ul id="fileList"></ul>
+    <input id="newFileName" placeholder="파일명">
+    <button id="createFileBtn">파일 생성</button>
+  </div>
+
+  <div id="notepad" class="window hidden">
+    <h3>메모장</h3>
+    <select id="fileSelect"></select>
+    <textarea id="noteContent"></textarea>
+    <button id="saveBtn">저장</button>
+  </div>
+</div>
+
+<script type="module" src="app.js"></script>
+</body>
+</html>
